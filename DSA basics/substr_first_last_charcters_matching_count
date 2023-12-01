@@ -7,14 +7,13 @@ function subStrUnderCond(s){
     for( i = 0; i < arr.length ; i++){
         let substr= '';
 
-        for( j=i ; j < arr.length;j++){
+        for( j = i ; j < arr.length;j++){
             if(j==i){
-                substr+=arr[i];
-                temp_arr.push(substr);
+                substr += arr[i];
             }else{
                 substr += arr[j];
-                temp_arr.push(substr);
             }
+            temp_arr.push(substr);
         }
     }
 
