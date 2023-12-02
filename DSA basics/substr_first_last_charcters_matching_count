@@ -1,18 +1,11 @@
 function subStrUnderCond(s){
-    
     let arr = s.split('');
-
     let temp_arr = [];
     
     for( i = 0; i < arr.length ; i++){
         let substr= '';
-
         for( j = i ; j < arr.length;j++){
-            if(j==i){
-                substr += arr[i];
-            }else{
-                substr += arr[j];
-            }
+            substr += arr[j];
             temp_arr.push(substr);
         }
     }
@@ -20,13 +13,8 @@ function subStrUnderCond(s){
     let count =0;
 
     for(let  i = 0; i < temp_arr.length; i ++){
-        
-        let first_index =0;
-        let last_index= temp_arr[i].length-1;
-
-        if(temp_arr[i][first_index]==temp_arr[i][last_index]){ 
+        if(temp_arr[i][0]==temp_arr[i][temp_arr[i].length-1])
             count++;
-        }
     }
     
     console.log(count);
