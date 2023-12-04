@@ -9,14 +9,12 @@ function subStrUnderCond(s){
             temp_arr.push(substr);
         }
     }
-
+    
     let count =0;
-
     for(let  i = 0; i < temp_arr.length; i ++){
         if(temp_arr[i][0]==temp_arr[i][temp_arr[i].length-1])
             count++;
     }
     
     console.log(count);
-
 }
